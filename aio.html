@@ -489,7 +489,7 @@ changes?</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li><p>Recovering the excellent version is only possible if you created
@@ -899,7 +899,7 @@ useful nevertheless.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The <code>-l</code> option makes <code>ls</code> use a
 <strong>l</strong>ong listing format, showing not only the
@@ -937,7 +937,7 @@ option to see the last changed dates.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>The most recently changed file is listed last when using
 <code>-rt</code>. This can be very useful for finding your most recent
@@ -1290,7 +1290,7 @@ commands could Nelle use to navigate to her home directory, which is
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>No: <code>.</code> stands for the current directory.</li>
@@ -1338,7 +1338,7 @@ display?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>No: there <em>is</em> a directory <code>backup</code> in
@@ -1386,7 +1386,7 @@ following output:</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>No: <code>pwd</code> is not the name of a directory.</li>
@@ -3237,7 +3237,7 @@ per machine.</li>
 </div>
 </div></section><section id="aio-03-create"><p>Content from <a href="03-create.html">Creating a Repository</a></p>
 <hr>
-<p> Last updated on 2023-09-25 | 
+<p> Last updated on 2023-10-19 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3269,20 +3269,9 @@ per machine.</li>
 </div>
 </div>
 </div>
-<p>Once Git is configured, we can start using it.</p>
-<p>We will continue with the story of Wolfman and Dracula who are
-investigating if it is possible to send a planetary lander to Mars.</p>
-<p><img src="fig/motivatingexample.png" alt="motivatingexample" class="figure"><a href="https://www.deviantart.com/b-maze/art/Werewolf-vs-Dracula-124893530" class="external-link">Werewolf
-vs dracula</a> by <a href="https://www.deviantart.com/b-maze" class="external-link">b-maze</a>
-/ <a href="https://www.deviantart.com/" class="external-link">Deviant Art</a>. <a href="https://en.wikipedia.org/wiki/File:OSIRIS_Mars_true_color.jpg" class="external-link">Mars</a>
-by European Space Agency / <a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="external-link">CC-BY-SA 3.0
-IGO</a>. <a href="https://commons.wikimedia.org/wiki/File:PIA19873-Pluto-NewHorizons-FlyingPastImage-20150714-transparent.png" class="external-link">Pluto</a>
-/ Courtesy NASA/JPL-Caltech. <a href="https://commons.wikimedia.org/wiki/File:Mummy_icon_-_Noun_Project_4070.svg" class="external-link">Mummy</a>
-© Gilad Fried / <a href="https://thenounproject.com/" class="external-link">The Noun
-Project</a> / <a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="external-link">CC BY
-3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Lune_ico.png" class="external-link">Moon</a> ©
-Luc Viatour / <a href="https://lucnix.be/" class="external-link">https://lucnix.be</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" class="external-link">CC BY-SA
-3.0</a>.</p>
+<p>Once Git is configured, we can start using it. Let’s imagine we want
+to create a simple web page about our work. We can track revisions to
+the page using git and, later, publish it using GitHub pages.</p>
 <p>First, let’s create a new directory in the <code>Desktop</code>
 folder for our work and then change the current working directory to the
 newly created one:</p>
@@ -3290,10 +3279,10 @@ newly created one:</p>
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mkdir planets</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd planets</span></code></pre>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mkdir simple-site</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd simple-site</span></code></pre>
 </div>
-<p>Then we tell Git to make <code>planets</code> a <a href="reference.html#repository">repository</a> -- a place where Git can
+<p>Then we tell Git to make <code>simple-site</code> a <a href="reference.html#repository">repository</a> -- a place where Git can
 store versions of our files:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3303,10 +3292,10 @@ store versions of our files:</p>
 <p>It is important to note that <code>git init</code> will create a
 repository that can include subdirectories and their files—there is no
 need to create separate repositories nested within the
-<code>planets</code> repository, whether subdirectories are present from
-the beginning or added later. Also, note that the creation of the
-<code>planets</code> directory and its initialization as a repository
-are completely separate processes.</p>
+<code>simple-site</code> repository, whether subdirectories are present
+from the beginning or added later. Also, note that the creation of the
+<code>simple-site</code> directory and its initialization as a
+repository are completely separate processes.</p>
 <p>If we use <code>ls</code> to show the directory’s contents, it
 appears that nothing has changed:</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -3315,7 +3304,7 @@ appears that nothing has changed:</p>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
 </div>
 <p>But if we add the <code>-a</code> flag to show everything, we can see
-that Git has created a hidden directory within <code>planets</code>
+that Git has created a hidden directory within <code>simple-site</code>
 called <code>.git</code>:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3371,25 +3360,21 @@ wording of the output might be slightly different.</p>
 <h3 class="callout-title">Places to Create Git Repositories<a class="anchor" aria-label="anchor" href="#places-to-create-git-repositories"></a>
 </h3>
 <div class="callout-content">
-<p>Along with tracking information about planets (the project we have
-already created), Dracula would also like to track information about
-moons. Despite Wolfman’s concerns, Dracula creates a <code>moons</code>
-project inside his <code>planets</code> project with the following
-sequence of commands:</p>
+<p>Imagine you create a directory for your website images:</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop   <span class="co"># return to Desktop directory</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd planets     <span class="co"># go into planets directory, which is already a Git repository</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-a</span>          <span class="co"># ensure the .git subdirectory is still present in the planets directory</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mkdir moons    <span class="co"># make a subdirectory planets/moons</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd moons       <span class="co"># go into moons subdirectory</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git init       <span class="co"># make the moons subdirectory a Git repository</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd simple-site <span class="co"># go into simple-site directory, which is already a Git repository</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-a</span>          <span class="co"># ensure the .git subdirectory is still present in the simple-site directory</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mkdir images    <span class="co"># make a subdirectory simple-site/images</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd images       <span class="co"># go into images subdirectory</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git init       <span class="co"># make the images subdirectory a Git repository</span></span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-a</span>          <span class="co"># ensure the .git subdirectory is present indicating we have created a new Git repository</span></span></code></pre>
 </div>
 <p>Is the <code>git init</code> command, run inside the
-<code>moons</code> subdirectory, required for tracking files stored in
-the <code>moons</code> subdirectory?</p>
+<code>images</code> subdirectory, required for tracking files stored in
+the <code>images</code> subdirectory?</p>
 </div>
 </div>
 </div>
@@ -3400,14 +3385,12 @@ the <code>moons</code> subdirectory?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>No. Dracula does not need to make the <code>moons</code> subdirectory
-a Git repository because the <code>planets</code> repository can track
-any files, sub-directories, and subdirectory files under the
-<code>planets</code> directory. Thus, in order to track all information
-about moons, Dracula only needed to add the <code>moons</code>
-subdirectory to the <code>planets</code> directory.</p>
+<p>You don’t need to make the <code>images</code> subdirectory a Git
+repository because the <code>simple-site</code> repository can track any
+files, sub-directories, and subdirectory files under the
+<code>simple-site</code> directory.</p>
 <p>Additionally, Git repositories can interfere with each other if they
 are “nested”: the outer repository will try to version-control the inner
 repository. Therefore, it’s best to create each new Git repository in a
@@ -3437,10 +3420,8 @@ as shown above:</p>
 <h3 class="callout-title">Correcting <code>git init</code> Mistakes<a class="anchor" aria-label="anchor" href="#correcting-git-init-mistakes"></a>
 </h3>
 <div class="callout-content">
-<p>Wolfman explains to Dracula how a nested repository is redundant and
-may cause confusion down the road. Dracula would like to remove the
-nested repository. How can Dracula undo his last <code>git init</code>
-in the <code>moons</code> subdirectory?</p>
+<p>Can you undo the last <code>git init</code> in the
+<code>images</code> subdirectory?</p>
 </div>
 </div>
 </div>
@@ -3451,7 +3432,7 @@ in the <code>moons</code> subdirectory?</p>
   Solution – USE WITH CAUTION!
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
@@ -3475,13 +3456,14 @@ episode.</p>
 <h3 id="solution-1">Solution<a class="anchor" aria-label="anchor" href="#solution-1"></a>
 </h3>
 <p>Git keeps all of its files in the <code>.git</code> directory. To
-recover from this little mistake, Dracula can just remove the
-<code>.git</code> folder in the moons subdirectory by running the
-following command from inside the <code>planets</code> directory:</p>
+recover from this little mistake, you can just remove the
+<code>.git</code> folder in the images subdirectory by running the
+following command from inside the <code>simple-site</code>
+directory:</p>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> rm <span class="at">-rf</span> moons/.git</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> rm <span class="at">-rf</span> images/.git</span></code></pre>
 </div>
 <p>But be careful! Running this command in the wrong directory will
 remove the entire Git history of a project you might want to keep.
@@ -4808,7 +4790,7 @@ version of her Python script called <code>data_cruncher.py</code>?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The answer is (5)-Both 2 and 4.</p>
 <p>The <code>checkout</code> command restores files from the repository,
@@ -4872,7 +4854,7 @@ e.g. 0b1d055).</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>The command <code>git log</code> lists project history with commit
 IDs.</p>
@@ -4937,7 +4919,7 @@ changes to the repository.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The answer is 2.</p>
 <p>The command <code>git add venus.txt</code> places the current version
@@ -5003,7 +4985,7 @@ use <code>git checkout</code> to see if you can remove your change.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>After adding a change, <code>git checkout</code> can not be used
 directly. Let’s look at the output of <code>git status</code>:</p>
@@ -5315,7 +5297,7 @@ nothing to commit, working tree clean</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>If you only want to ignore the contents of
 <code>results/plots</code>, you can change your <code>.gitignore</code>
@@ -5358,7 +5340,7 @@ directory except for <code>final.csv</code>? Hint: Find out what
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You would add the following two lines to your .gitignore:</p>
 <div class="codewrapper">
@@ -5409,7 +5391,7 @@ not <code>results/data</code>?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>If you want to ignore the contents of <code>results/</code> but not
 those of <code>results/data/</code>, you can change your
@@ -5459,7 +5441,7 @@ ignore all <code>.csv</code> files in
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Appending <code>results/data/position/gps/*.csv</code> will match
 every file in <code>results/data/position/gps</code> that ends with
@@ -5499,7 +5481,7 @@ listing the names of the corresponding folders?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>In the <code>.gitignore</code> file, write:</p>
 <div class="codewrapper">
@@ -5540,7 +5522,7 @@ exception with the exclamation point operator.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>The <code>!</code> modifier will negate an entry from a previously
 defined ignore pattern. Because the <code>!*.csv</code> entry negates
@@ -5586,7 +5568,7 @@ via <code>.gitignore</code>.</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>append either <code>log_*</code> or <code>log*</code> as a new entry
@@ -6952,7 +6934,7 @@ has changed with command line? And on GitHub?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>On the command line, the Collaborator can use
 <code>git fetch origin main</code> to get the remote changes into the
@@ -7392,7 +7374,7 @@ non-textual file that is stored in version control?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Let’s try it. Suppose Dracula takes a picture of Martian surface and
 calls it <code>mars.jpg</code>.</p>
@@ -7637,7 +7619,7 @@ started.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -7753,8 +7735,8 @@ resolved.</li>
   "url": "https://swcarpentry.github.io/git-novice/aio.html",
   "identifier": "https://swcarpentry.github.io/git-novice/aio.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-10-17",
-  "datePublished": "2023-10-17"
+  "dateModified": "2023-10-19",
+  "datePublished": "2023-10-19"
 }
 
   </script><script>
